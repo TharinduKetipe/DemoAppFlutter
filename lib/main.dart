@@ -1,8 +1,5 @@
-import 'package:demo/views/first_page.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/views/home.dart';
-import 'package:demo/views/second_page.dart';
-import 'package:demo/views/third_page.dart';
 import 'package:demo/commons/route_generator.dart';
 
 void main() {

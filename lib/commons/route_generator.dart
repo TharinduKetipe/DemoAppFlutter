@@ -1,11 +1,9 @@
 import 'package:demo/views/fourth_page.dart';
 import 'package:demo/views/home.dart';
 import 'package:flutter/material.dart';
-import 'package:demo/main.dart';
 import 'package:demo/views/first_page.dart';
 import 'package:demo/views/second_page.dart';
 import 'package:demo/views/third_page.dart';
-import 'package:demo/commons/arguements.dart';
 import 'package:demo/commons/arguements.dart';
 
 class RouteGenerator {
