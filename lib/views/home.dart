@@ -49,10 +49,11 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.all(8.0),
               onPressed: () {
                 //Simple Material Route
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => FirstPage()),
-                );
+
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(builder: (context) => FirstPage()),
+                // );
               },
               child: Text(
                 "First Page",
@@ -70,11 +71,12 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.all(8.0),
               onPressed: () {
                 //Pass data with Material Route
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => SecondPage(title: "Second Page")),
-                );
+
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //       builder: (context) => SecondPage(title: "Second Page")),
+                // );
               },
               child: Text(
                 "Second Page",
@@ -118,7 +120,8 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.all(8.0),
               onPressed: () {
                 //Named Route for first screen
-                Navigator.pushNamed(context, '/first');
+
+                // Navigator.pushNamed(context, '/first');
               },
               child: Text(
                 "First Page",
@@ -136,9 +139,10 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.all(8.0),
               onPressed: () {
                 //Pass data with Named route
-                Navigator.pushNamed(context, '/third',
-                    arguments: ThirdPageArguments(
-                        "Third Page", "This message pass through named route"));
+
+                // Navigator.pushNamed(context, '/third',
+                //     arguments: ThirdPageArguments(
+                //         "Third Page", "This message pass through named route"));
               },
               child: Text(
                 "Third Page",
