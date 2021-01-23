@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		S2TqWbZI9R6IZVyfIvlisyUl+fY=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,15 @@
 		</data>
 		<key>flutter_assets/NOTICES</key>
 		<data>
-		Kyr6cpZz0+QoB2TGTHnzeOuqQzQ=
+		1fLZ20Av6BNxOR/HEGqFlhe79dA=
+		</data>
+		<key>flutter_assets/assets/langs/de-DE.json</key>
+		<data>
+		1sN6l0dhm8TpojoO+0M30pwrkt4=
+		</data>
+		<key>flutter_assets/assets/langs/en-US.json</key>
+		<data>
+		1sN6l0dhm8TpojoO+0M30pwrkt4=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -30,11 +38,27 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		GgeRLbHUGgJ/Egg6QHkoiev+37s=
+		fZNrcoEU6toqm+jx0tov302HpWg=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
 		akB+MdVeMuxQXcnItb5e3jkn6Ek=
+		</data>
+		<key>flutter_assets/packages/easy_localization/i18n/ar-DZ.json</key>
+		<data>
+		holI7B3wBPGOywo0UYp947TPIK4=
+		</data>
+		<key>flutter_assets/packages/easy_localization/i18n/ar.json</key>
+		<data>
+		holI7B3wBPGOywo0UYp947TPIK4=
+		</data>
+		<key>flutter_assets/packages/easy_localization/i18n/en-US.json</key>
+		<data>
+		3WStZRn/IQFCSnETDOwqxWghOEo=
+		</data>
+		<key>flutter_assets/packages/easy_localization/i18n/en.json</key>
+		<data>
+		3WStZRn/IQFCSnETDOwqxWghOEo=
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
@@ -47,11 +71,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+			S2TqWbZI9R6IZVyfIvlisyUl+fY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			P4Pk1e6WmCiStbWsc/QTY3s0WBT1Jedl/sRSpxJRekg=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -69,11 +93,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Kyr6cpZz0+QoB2TGTHnzeOuqQzQ=
+			1fLZ20Av6BNxOR/HEGqFlhe79dA=
 			</data>
 			<key>hash2</key>
 			<data>
-			eoATYqtdq81xg/+WnwmdobUCOBlxlNz1uvGYoz1aD5o=
+			LslpLCit8pYgqTviz6hLJO96y74wQDub5JhDxf54Zeg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/langs/de-DE.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1sN6l0dhm8TpojoO+0M30pwrkt4=
+			</data>
+			<key>hash2</key>
+			<data>
+			MqZZIInFj6gOBBF+kcPoGBvRPQLjqD61CkB7FjGyPxs=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/langs/en-US.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1sN6l0dhm8TpojoO+0M30pwrkt4=
+			</data>
+			<key>hash2</key>
+			<data>
+			MqZZIInFj6gOBBF+kcPoGBvRPQLjqD61CkB7FjGyPxs=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -102,11 +148,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GgeRLbHUGgJ/Egg6QHkoiev+37s=
+			fZNrcoEU6toqm+jx0tov302HpWg=
 			</data>
 			<key>hash2</key>
 			<data>
-			brK/PfeufY2YoiHUBwXwZPE7NKgYkjtbJ/hTVN7zSns=
+			Qng73LqVaNJ+7ss9nw6fgjHdyvvVN5kK4rErm+l/rnk=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -118,6 +164,50 @@
 			<key>hash2</key>
 			<data>
 			sNxA7xzwH5ge9e8Ti6X2Mg2S9fg9KArmX5ax11OBzRo=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/easy_localization/i18n/ar-DZ.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			holI7B3wBPGOywo0UYp947TPIK4=
+			</data>
+			<key>hash2</key>
+			<data>
+			YGQRzN3RCDeGsw7C7ZBCSxbcTejilehCGheMDs9cD8A=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/easy_localization/i18n/ar.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			holI7B3wBPGOywo0UYp947TPIK4=
+			</data>
+			<key>hash2</key>
+			<data>
+			YGQRzN3RCDeGsw7C7ZBCSxbcTejilehCGheMDs9cD8A=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/easy_localization/i18n/en-US.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3WStZRn/IQFCSnETDOwqxWghOEo=
+			</data>
+			<key>hash2</key>
+			<data>
+			hLSMeK/SeqCkzzaxq45YGEEfAmlNdD8unwzZiMaV+tg=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/easy_localization/i18n/en.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3WStZRn/IQFCSnETDOwqxWghOEo=
+			</data>
+			<key>hash2</key>
+			<data>
+			hLSMeK/SeqCkzzaxq45YGEEfAmlNdD8unwzZiMaV+tg=
 			</data>
 		</dict>
 		<key>flutter_assets/vm_snapshot_data</key>
