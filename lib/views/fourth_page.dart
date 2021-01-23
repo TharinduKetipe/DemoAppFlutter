@@ -27,7 +27,7 @@ class FourthPage extends StatelessWidget {
               padding: EdgeInsets.all(8.0),
               onPressed: () {
                 //pass the data to previous screen through back navigation
-                Navigator.pop(context, 'This data come from third screen');
+                Navigator.pop(context, 'This data come from fourth screen');
               },
               child: Text(
                 "Back",
