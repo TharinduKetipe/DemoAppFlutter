@@ -64,10 +64,27 @@ ThemeData primaryTheme = ThemeData(
       fontWeight: FontWeight.bold,
       color: Colors.white,
     ),
+    subtitle1: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: 18,
+      fontWeight: FontWeight.normal,
+      color: primaryTheme.primaryColor,
+    ),
+    bodyText1: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: 18,
+      fontWeight: FontWeight.normal,
+      color: primaryTheme.primaryColor,
+    ),
   ),
   primaryTextTheme: TextTheme(
-      //text theme that contrast with primary color
-      ),
+    headline5: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+      color: primaryTheme.primaryColor,
+    ),
+  ),
   platform: TargetPlatform.android,
   materialTapTargetSize: MaterialTapTargetSize.padded,
   applyElevationOverlayColor: true,
