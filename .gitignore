@@ -1,2 +1,5 @@
 
 .packages
+.dart_tool/package_config.json
+.flutter-plugins-dependencies
+.packages

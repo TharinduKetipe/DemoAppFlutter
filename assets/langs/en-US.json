@@ -2,7 +2,8 @@
     "titles": {
         "home" : "Home",
         "login" : "Login",
-        "first" : "First Screen"
+        "first" : "First Screen",
+        "users" : "Users"
     },
     "buttonTitles": {
         "login" : "Login"

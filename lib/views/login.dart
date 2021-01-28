@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:demo/widgets/form_items.dart';
+import 'package:demo/widgets/appbar.dart';
 import 'package:demo/mixins/validation_mixin.dart';
 
 class LoginPage extends StatefulWidget {
@@ -45,10 +46,7 @@ class _LoginPageState extends State<LoginPage> with ValidationMixin {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('titles.login'.tr(),
-            style: Theme.of(context).appBarTheme.textTheme.headline4),
-      ),
+      appBar: appBar('titles.login'.tr(), context),
       body: ListView(children: <Widget>[
         Container(
           child: Column(
@@ -92,6 +90,7 @@ class _LoginPageState extends State<LoginPage> with ValidationMixin {
                           padding: EdgeInsets.only(top: 50),
                           child: submitButton('buttonTitles.login'.tr(), () {
                             formKey.currentState.save();
+                            Navigator.pushNamed(context, '/users');
                           }, width - 70, height / 20, context),
                         ),
                       ])),
