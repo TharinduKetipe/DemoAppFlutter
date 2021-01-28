@@ -68,13 +68,11 @@ ThemeData primaryTheme = ThemeData(
       fontFamily: 'Lato',
       fontSize: 18,
       fontWeight: FontWeight.normal,
-      color: primaryTheme.primaryColor,
     ),
     bodyText1: TextStyle(
       fontFamily: 'Lato',
       fontSize: 18,
       fontWeight: FontWeight.normal,
-      color: primaryTheme.primaryColor,
     ),
   ),
   primaryTextTheme: TextTheme(
@@ -82,7 +80,6 @@ ThemeData primaryTheme = ThemeData(
       fontFamily: 'Lato',
       fontSize: 16,
       fontWeight: FontWeight.normal,
-      color: primaryTheme.primaryColor,
     ),
   ),
   platform: TargetPlatform.android,
