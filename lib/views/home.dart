@@ -21,95 +21,33 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Center(
           child: Container(
-        padding: EdgeInsets.only(top: 55),
+        color: Colors.yellow,
+        padding: EdgeInsets.only(top: 55, left: 0, right: 0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Container(
               padding: EdgeInsets.only(top: 15, bottom: 50),
               child: Text(
-                'Flutter Route Generator Example',
+                'Container Margin Example',
               ),
             ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                Navigator.pushNamed(context, '/first');
-              },
-              child: Text(
-                "First Page",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-            ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                Navigator.of(context).pushNamed(
-                  '/second',
-                  arguments:
-                      "Second Page", //This is really importan. Here you should pass every parameter as arguments
-                );
-              },
-              child: Text(
-                "Second Page",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-            ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                Navigator.of(context).pushNamed(
-                  '/third',
-                  arguments: ThirdPageArguments(
-                      "Third Page", "This message pass through named route"),
-                );
-              },
-              child: Text(
-                "Third Page",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-            ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
-              onPressed: () {
-                this.navigateToFourth();
-              },
-              child: Text(
-                "Fourth Page",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-            ),
-            Text(
-              this.message,
-            ),
+            Container(
+                decoration:
+                    BoxDecoration(border: Border.all(color: Colors.blueAccent)),
+                padding:
+                    EdgeInsets.only(top: 25, bottom: 25, left: 25, right: 25),
+                margin:
+                    EdgeInsets.only(top: 25, bottom: 25, left: 55, right: 25),
+                width: 300,
+                height: 300,
+                // color: Colors.blue,
+                child: Container(
+                  color: Colors.red,
+                  child: Text(
+                    'This is sample container.',
+                  ),
+                )),
           ],
         ),
       )),
