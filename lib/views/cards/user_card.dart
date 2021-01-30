@@ -9,6 +9,7 @@ Container userItem(BuildContext context, user) {
     child: Card(
       child: GestureDetector(
         onTap: () {
+          print("Cell is clicked.");
           //Navigate to user profile
         },
         child: Row(children: <Widget>[
