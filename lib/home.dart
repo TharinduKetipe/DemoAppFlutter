@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:newProj/widgets/form_components.dart';
+import 'package:demo/widgets/form_components.dart';
+import 'package:demo/list.dart';
 
 enum WhyFarther { harder, smarter, selfStarter, tradingCharter }
 
@@ -20,6 +21,8 @@ class _MyHomePageState extends State<MyHomePage> {
     WhyFarther _selection;
     String selectedOption = "None";
     String dropdownValue = 'One';
+
+    final snackBar = SnackBar(content: Text('Yay! A SnackBar!'));
 
     return Scaffold(
       appBar: AppBar(
@@ -173,10 +176,46 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
-            print("floating tapped+++++++++=");
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => ListPage()));
+            // this._showMyDialog();
           },
-          icon: Icon(Icons.add),
-          label: Text('')),
+          icon: Icon(Icons.arrow_forward),
+          label: Text('List Page')),
+    );
+  }
+
+  _showMyDialog() {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('AlertDialog Title'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text('This is a demo alert dialog.'),
+                Text('Would you like to approve of this message?'),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Approve'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+            TextButton(
+              child: Text('Cancel'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }
