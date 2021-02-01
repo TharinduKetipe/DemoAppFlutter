@@ -1,6 +1,6 @@
-# demo
+# ServiceDemo
 
-Flutter model app
+A new Flutter project.
 
 ## Getting Started
 
