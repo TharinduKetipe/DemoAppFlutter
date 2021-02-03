@@ -3,6 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:demo/widgets/form_items.dart';
 import 'package:demo/widgets/appbar.dart';
 import 'package:demo/mixins/validation_mixin.dart';
+import 'package:demo/network/webservices.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -90,7 +91,9 @@ class _LoginPageState extends State<LoginPage> with ValidationMixin {
                           padding: EdgeInsets.only(top: 50),
                           child: submitButton('buttonTitles.login'.tr(), () {
                             formKey.currentState.save();
-                            Navigator.pushNamed(context, '/users');
+                            if (formKey.currentState.validate()) {
+                              this.logUser(context, email, password);
+                            }
                           }, width - 70, height / 20, context),
                         ),
                       ])),
@@ -99,5 +102,12 @@ class _LoginPageState extends State<LoginPage> with ValidationMixin {
         ),
       ]),
     );
+  }
+
+  void logUser(context, username, password) async {
+    var res = await login(context, username, password);
+    if (res != null) {
+      Navigator.pushNamed(context, '/users');
+    }
   }
 }
