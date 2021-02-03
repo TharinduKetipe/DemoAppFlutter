@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:demo/models/industry_response.dart';
 
-Container userItem(BuildContext context, user) {
+Container userItem(BuildContext context, industry) {
   double width = MediaQuery.of(context).size.width;
   double height = MediaQuery.of(context).size.height;
   return Container(
@@ -14,12 +16,12 @@ Container userItem(BuildContext context, user) {
         child: Row(children: <Widget>[
           Padding(
             padding: EdgeInsets.only(top: 0, left: 0, right: 0),
-            child: Image.asset(
-              'assets/images/login.jpg',
-              height: height / 6,
-              width: width / 3,
-              fit: BoxFit.fill,
-            ),
+            child: Image(
+                width: width / 3,
+                height: height / 6,
+                image: NetworkImage(
+                  industry.logoUrl,
+                )),
           ),
           Column(
             children: <Widget>[
@@ -28,7 +30,7 @@ Container userItem(BuildContext context, user) {
                 width: width * 2 / 3 - 55,
                 height: (height / 6 - 40) / 2,
                 child: Text(
-                  user,
+                  industry.name,
                   textAlign: TextAlign.left,
                   style: Theme.of(context).textTheme.subtitle1,
                 ),
@@ -38,7 +40,7 @@ Container userItem(BuildContext context, user) {
                 height: (height / 6 - 40) / 2,
                 width: width * 2 / 3 - 55,
                 child: Text(
-                  "No 2, Hill St. Kandy.",
+                  'labels.industry_id'.tr() + '${industry.id}',
                   textAlign: TextAlign.left,
                   style: Theme.of(context).primaryTextTheme.bodyText1,
                 ),
