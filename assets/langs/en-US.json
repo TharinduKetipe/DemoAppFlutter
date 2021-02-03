@@ -13,5 +13,10 @@
         "email" : "Email",
         "password" : "Password"
         
+    },
+    "errors": {
+        "network" : "No network, Please connect to the internet.",
+        "login" : "Login failed, Please try again"
+        
     }
 }

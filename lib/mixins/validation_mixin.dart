@@ -33,7 +33,7 @@ class ValidationMixin {
   String validatePassword(String value) {
     if (value.length < 1) {
       return 'Password cannot be empty';
-    } else if ((value.length < 8)) {
+    } else if ((value.length < 5)) {
       return 'Password should be atlease 8 characters long';
     }
   }
