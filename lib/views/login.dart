@@ -4,6 +4,7 @@ import 'package:demo/widgets/form_items.dart';
 import 'package:demo/widgets/appbar.dart';
 import 'package:demo/mixins/validation_mixin.dart';
 import 'package:demo/network/webservices.dart';
+import 'package:demo/commons/utilities.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -107,6 +108,8 @@ class _LoginPageState extends State<LoginPage> with ValidationMixin {
   void logUser(context, username, password) async {
     var res = await login(context, username, password);
     if (res != null) {
+      Utilities.saveToken(res.accessToken);
+      var token = await Utilities.userToken();
       Navigator.pushNamed(context, '/users');
     }
   }
