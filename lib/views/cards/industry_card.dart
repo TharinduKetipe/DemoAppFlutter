@@ -3,7 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:demo/models/industry_response.dart';
 import 'package:demo/commons/globals.dart' as global;
 
-Container userItem(BuildContext context, industry) {
+Container industryItem(BuildContext context, industry) {
   double width = MediaQuery.of(context).size.width;
   double height = MediaQuery.of(context).size.height;
   return Container(
