@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:demo/models/industry_response.dart';
+import 'package:demo/commons/globals.dart' as global;
 
 Container userItem(BuildContext context, industry) {
   double width = MediaQuery.of(context).size.width;
@@ -15,13 +16,13 @@ Container userItem(BuildContext context, industry) {
         },
         child: Row(children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 0, left: 0, right: 0),
-            child: Image(
-                width: width / 3,
-                height: height / 6,
-                image: NetworkImage(
-                  industry.logoUrl,
-                )),
+            padding: EdgeInsets.only(top: 0, left: 15, right: 0),
+            child: FadeInImage.assetNetwork(
+              placeholder: 'assets/images/placeholder.jpg',
+              image: global.API_BASE + industry.logoUrl,
+              width: (width / 3) - 15,
+              height: height / 6,
+            ),
           ),
           Column(
             children: <Widget>[
