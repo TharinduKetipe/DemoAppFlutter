@@ -1,3 +1,4 @@
+import 'package:demo/commons/utilities.dart';
 import 'package:flutter/material.dart';
 import 'package:connectivity/connectivity.dart';
 import 'dart:convert';
@@ -8,6 +9,7 @@ import 'package:demo/commons/globals.dart' as global;
 import 'package:demo/models/login_response.dart';
 import 'package:demo/widgets/loader.dart';
 import 'package:demo/models/industry_response.dart';
+import 'package:demo/commons/utilities.dart';
 
 Future<LoginResponse> login(BuildContext context, username, password) async {
   var connectivityResult = await (Connectivity().checkConnectivity());
@@ -44,19 +46,25 @@ Future<LoginResponse> login(BuildContext context, username, password) async {
 
 Future<IndustryResponse> getIndustries(BuildContext context) async {
   var connectivityResult = await (Connectivity().checkConnectivity());
+  var token = await Utilities.userToken();
 
   if ((connectivityResult == ConnectivityResult.mobile) ||
       (connectivityResult == ConnectivityResult.wifi)) {
     try {
       showLoader(context);
-      final http.Response response = await http.get(global.INDUSTRIES,
-          headers: {"Content-Type": "application/json"});
+      final http.Response response =
+          await http.get(global.INDUSTRIES, headers: {
+        "Content-Type": "application/json",
+        'Authorization': 'Bearer $token',
+      });
       var responseBody = json.decode(response.body);
       stopLoader(context);
       if (response.statusCode == 200) {
         return IndustryResponse.fromJson(responseBody);
       } else if (response.statusCode == 403) {
         showFloatingFlushbar(context, 'errors.industries'.tr());
+        var isDelete = await Utilities.clearPreferences();
+        Navigator.pushNamed(context, '/login');
         return null;
       } else {
         showFloatingFlushbar(context, 'errors.industries'.tr());
