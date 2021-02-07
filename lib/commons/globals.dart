@@ -8,3 +8,4 @@ const String API_BASE = 'https://demo-services.herokuapp.com/';
 
 const String LOGIN = API_BASE + "api/login";
 const String INDUSTRIES = API_BASE + "api/industries/all";
+const String USER = API_BASE + "api/user";

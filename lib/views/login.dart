@@ -110,7 +110,7 @@ class _LoginPageState extends State<LoginPage> with ValidationMixin {
     if (res != null) {
       var status = await Utilities.saveToken(res.accessToken);
       var token = await Utilities.userToken();
-      Navigator.pushNamed(context, '/home');
+      Navigator.pushReplacementNamed(context, '/home');
     }
   }
 }
