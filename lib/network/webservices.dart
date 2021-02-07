@@ -64,7 +64,7 @@ Future<IndustryResponse> getIndustries(BuildContext context) async {
       } else if (response.statusCode == 403) {
         showFloatingFlushbar(context, 'errors.industries'.tr());
         var isDelete = await Utilities.clearPreferences();
-        Navigator.pushNamed(context, '/login');
+        Navigator.pushReplacementNamed(context, '/login');
         return null;
       } else {
         showFloatingFlushbar(context, 'errors.industries'.tr());
@@ -78,5 +78,37 @@ Future<IndustryResponse> getIndustries(BuildContext context) async {
   } else {
     showFloatingFlushbar(context, 'errors.network'.tr());
     return null;
+  }
+}
+
+Future<bool> logout(BuildContext context) async {
+  var connectivityResult = await (Connectivity().checkConnectivity());
+  var token = await Utilities.userToken();
+
+  if ((connectivityResult == ConnectivityResult.mobile) ||
+      (connectivityResult == ConnectivityResult.wifi)) {
+    try {
+      showLoader(context);
+      final http.Response response = await http.get(global.USER, headers: {
+        "Content-Type": "application/json",
+        'Authorization': 'Bearer $token',
+      });
+      stopLoader(context);
+      if (response.statusCode == 200 || response.statusCode == 403) {
+        var isDelete = await Utilities.clearPreferences();
+        Navigator.pushReplacementNamed(context, '/login');
+        return true;
+      } else {
+        showFloatingFlushbar(context, 'errors.industries'.tr());
+        return false;
+      }
+    } catch (e) {
+      print(e);
+      showFloatingFlushbar(context, 'errors.unknown'.tr());
+      return false;
+    }
+  } else {
+    showFloatingFlushbar(context, 'errors.network'.tr());
+    return false;
   }
 }

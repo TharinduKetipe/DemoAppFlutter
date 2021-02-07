@@ -1,7 +1,17 @@
+import 'package:demo/network/webservices.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:demo/widgets/alert.dart';
 
 Widget navDrawer(BuildContext context) {
+  void logoutAlert(BuildContext context) async {
+    var res = await alert(context, 'alert.title'.tr(),
+        'alert.logout_message'.tr(), 'alert.yes'.tr(), 'alert.no'.tr());
+    if (res == ConfirmAction.ACCEPT) {
+      var isLogout = logout(context);
+    }
+  }
+
   final menus = [
     'drawer.home'.tr(),
     'drawer.industries'.tr(),
@@ -54,7 +64,7 @@ Widget navDrawer(BuildContext context) {
         ListTile(
           title: menuTile(context, menus[4]),
           onTap: () {
-            Navigator.pop(context);
+            logoutAlert(context);
           },
         ),
         separator(context),

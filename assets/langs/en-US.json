@@ -30,5 +30,11 @@
         "add_user" : "Add User",
         "logout" : "Logout"
         
+    },
+    "alert": {
+        "title" : "Confirmation",
+        "logout_message" : "Are you sure? You want to logout?",
+        "yes" : "Yes",
+        "no" : "No"
     }
 }
