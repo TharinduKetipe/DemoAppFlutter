@@ -30,6 +30,12 @@ class ValidationMixin {
     return null;
   }
 
+  String validateName(String value) {
+    if (value.length < 1) {
+      return 'Name cannot be empty';
+    }
+  }
+
   String validatePassword(String value) {
     if (value.length < 1) {
       return 'Password cannot be empty';
