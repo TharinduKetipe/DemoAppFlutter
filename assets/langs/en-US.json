@@ -7,11 +7,12 @@
         "industries" : "Industries"
     },
     "buttonTitles": {
-        "login" : "Login"
-        
+        "login" : "Login",
+        "add" : "Add" 
     },
     "labels": {
         "email" : "Email",
+        "name" : "Name",
         "password" : "Password",
         "industry_id" : "Industry Id : "
     },

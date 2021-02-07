@@ -58,6 +58,33 @@ Widget passwordField(validatePassword, onSaved, context, obscureText,
           onSaved: onSaved));
 }
 
+Widget nameField(validateName, onSaved, context) {
+  return Material(
+      elevation: 5.0,
+      shadowColor: Colors.black,
+      child: TextFormField(
+          keyboardType: TextInputType.text,
+          decoration: InputDecoration(
+            contentPadding: EdgeInsets.symmetric(
+                vertical: 5.0,
+                horizontal:
+                    5), // contentPadding: EdgeInsets.only(top: 5, bottom: 5, left: 2, right: 2),
+            focusedBorder: OutlineInputBorder(
+              borderSide:
+                  BorderSide(color: Theme.of(context).hintColor, width: 1.0),
+              borderRadius: BorderRadius.zero,
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderSide:
+                  BorderSide(color: Theme.of(context).hintColor, width: 1.0),
+              borderRadius: BorderRadius.zero,
+            ),
+            fillColor: Colors.white,
+          ),
+          validator: validateName,
+          onSaved: onSaved));
+}
+
 Widget submitButton(text, onPressed, width, height, context) {
   return ButtonTheme(
       minWidth: width,
