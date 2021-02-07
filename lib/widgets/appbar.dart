@@ -4,5 +4,8 @@ Widget appBar(title, context) {
   return AppBar(
     title:
         Text(title, style: Theme.of(context).appBarTheme.textTheme.headline4),
+    iconTheme: IconThemeData(
+      color: Colors.white,
+    ),
   );
 }

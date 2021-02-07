@@ -21,5 +21,14 @@
         "industries" : "Industry fetching failed, Please try again",
         "unknown" : "Something went wrong, Please try again"
         
+    },
+    "drawer": {
+        "title" : "Demo App",
+        "home" : "Home",
+        "industries" : "Industries",
+        "users" : "Users",
+        "add_user" : "Add User",
+        "logout" : "Logout"
+        
     }
 }

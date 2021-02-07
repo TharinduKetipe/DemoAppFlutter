@@ -4,6 +4,7 @@ import 'package:demo/widgets/appbar.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:demo/views/cards/industry_card.dart';
 import 'package:demo/network/webservices.dart';
+import 'package:demo/widgets/drawer.dart';
 
 class IndustriesPage extends StatefulWidget {
   @override
@@ -33,6 +34,7 @@ class _IndustriesPageState extends State<IndustriesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: appBar('titles.industries'.tr(), context),
+        drawer: navDrawer(context),
         body: industries != null
             ? ListView.separated(
                 itemBuilder: (BuildContext context, index) {

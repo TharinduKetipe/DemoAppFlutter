@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'drawer.title'.tr(),
       theme: primaryTheme,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:demo/widgets/drawer.dart';
+import 'package:demo/widgets/appbar.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -10,10 +12,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('titles.home'.tr(),
-            style: Theme.of(context).appBarTheme.textTheme.headline4),
-      ),
+      appBar: appBar('titles.home'.tr(), context),
+      drawer: navDrawer(context),
       body: Center(
           child: Container(
         padding: EdgeInsets.only(top: 55),
