@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:demo/widgets/appbar.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:demo/widgets/appbar.dart';
+import 'package:demo/widgets/drawer.dart';
 
-class ProfilePage extends StatefulWidget {
+class AddUserPage extends StatefulWidget {
   @override
-  _ProfilePageState createState() => _ProfilePageState();
+  _AddUserPageState createState() => _AddUserPageState();
 }
 
-class _ProfilePageState extends State<ProfilePage> {
+class _AddUserPageState extends State<AddUserPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar('titles.users'.tr(), context),
+      appBar: appBar('drawer.add_user'.tr(), context),
+      drawer: navDrawer(context),
       body: Center(
           child: Container(
         padding: EdgeInsets.only(top: 55),

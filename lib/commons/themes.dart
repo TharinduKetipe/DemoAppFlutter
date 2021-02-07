@@ -33,13 +33,19 @@ ThemeData primaryTheme = ThemeData(
       fontWeight: FontWeight.bold,
       color: Colors.white,
     ),
+    headline5: TextStyle(
+      fontFamily: 'Lato',
+      fontSize: 20,
+      fontWeight: FontWeight.w200,
+      color: HexColor.fromHex("#03a9f4"),
+    ),
   )),
   buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
   toggleButtonsTheme: ToggleButtonsThemeData(
       //toggle button theme
       ),
   buttonColor: Color(0xff936F3E),
-  secondaryHeaderColor: Colors.grey,
+  secondaryHeaderColor: Colors.grey.shade300,
   textSelectionColor: Color(0xffB5BFD3),
   cursorColor: Color(0xff936F3E),
   textSelectionHandleColor: Color(0xff936F3E),
