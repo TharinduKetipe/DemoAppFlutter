@@ -36,28 +36,28 @@ Widget navDrawer(BuildContext context) {
         ListTile(
           title: menuTile(context, menus[0]),
           onTap: () {
-            Navigator.pushNamed(context, '/home');
+            Navigator.pushReplacementNamed(context, '/home');
           },
         ),
         separator(context),
         ListTile(
           title: menuTile(context, menus[1]),
           onTap: () {
-            Navigator.pushNamed(context, '/industries');
+            Navigator.pushReplacementNamed(context, '/industries');
           },
         ),
         separator(context),
         ListTile(
           title: menuTile(context, menus[2]),
           onTap: () {
-            Navigator.pushNamed(context, '/users');
+            Navigator.pushReplacementNamed(context, '/users');
           },
         ),
         separator(context),
         ListTile(
           title: menuTile(context, menus[3]),
           onTap: () {
-            Navigator.pushNamed(context, '/add_user');
+            Navigator.pushReplacementNamed(context, '/add_user');
           },
         ),
         separator(context),
