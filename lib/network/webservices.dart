@@ -9,7 +9,6 @@ import 'package:demo/commons/globals.dart' as global;
 import 'package:demo/models/login_response.dart';
 import 'package:demo/widgets/loader.dart';
 import 'package:demo/models/industry_response.dart';
-import 'package:demo/commons/utilities.dart';
 
 Future<LoginResponse> login(BuildContext context, username, password) async {
   var connectivityResult = await (Connectivity().checkConnectivity());
