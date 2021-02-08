@@ -8,7 +8,8 @@
     },
     "buttonTitles": {
         "login" : "Login",
-        "add" : "Add" 
+        "add" : "Add",
+        "delete" : "Delete"  
     },
     "labels": {
         "email" : "Email",
@@ -35,7 +36,14 @@
     "alert": {
         "title" : "Confirmation",
         "logout_message" : "Are you sure? You want to logout?",
+        "delete_message" : "Are you sure? You want to delet?",
         "yes" : "Yes",
         "no" : "No"
+    },
+    "flushbar": {
+        "user_success" : "User added succussfuly",
+        "user_fail" : "User adding failed. Please try again.",
+        "user_delete_success" : "User deleted successfully.",
+        "user_delet_fail" : "User delet failed. Please try again."
     }
 }

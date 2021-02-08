@@ -38,6 +38,8 @@ dev_dependencies:
   intl: ^0.16.1
   flushbar: ^1.10.4
   shared_preferences: ^0.5.7+3
+  sqflite:
+  path_provider: ^1.6.27
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

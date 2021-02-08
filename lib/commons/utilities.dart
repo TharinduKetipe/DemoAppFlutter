@@ -1,4 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:math';
 
 class Utilities {
   static Future<bool> saveToken(token) async {
@@ -17,5 +18,10 @@ class Utilities {
     SharedPreferences preferences = await SharedPreferences.getInstance();
     await preferences.clear();
     return true;
+  }
+
+  static int generateRandomNumber() {
+    var random = new Random();
+    return random.nextInt(10000);
   }
 }
