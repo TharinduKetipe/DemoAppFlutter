@@ -5,18 +5,25 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:demo/commons/route_generator.dart';
 import 'package:demo/commons/themes.dart';
 import 'package:demo/commons/utilities.dart';
+import 'package:sentry_flutter/sentry_flutter.dart';
+import 'package:demo/commons/globals.dart' as global;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   var token = await Utilities.userToken();
-  runApp(
-    EasyLocalization(
-        supportedLocales: [Locale('en', 'US'), Locale('de', 'DE')],
-        path: 'assets/langs',
-        fallbackLocale: Locale('en', 'US'),
-        child: MyApp(
-          token: token,
-        )),
+  await SentryFlutter.init(
+    (options) {
+      options.dsn = global.SENTRY_DNS;
+    },
+    appRunner: () => runApp(
+      EasyLocalization(
+          supportedLocales: [Locale('en', 'US'), Locale('de', 'DE')],
+          path: 'assets/langs',
+          fallbackLocale: Locale('en', 'US'),
+          child: MyApp(
+            token: token,
+          )),
+    ),
   );
 }
 

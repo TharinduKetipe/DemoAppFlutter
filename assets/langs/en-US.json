@@ -6,6 +6,11 @@
         "users" : "Users",
         "industries" : "Industries"
     },
+    "messages": {
+        "welcom" : "Welcome !",
+        "greeting" : "Flutter Demo Application",
+        "institue" : "UCSC"
+    },
     "buttonTitles": {
         "login" : "Login",
         "add" : "Add",

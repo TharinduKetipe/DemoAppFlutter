@@ -34,7 +34,8 @@ Future<LoginResponse> login(BuildContext context, username, password) async {
         showFloatingFlushbar(context, 'errors.login'.tr(), true);
         return null;
       }
-    } catch (e) {
+    } catch (e, stackTrace) {
+      Utilities.reportError(e, stackTrace);
       showFloatingFlushbar(context, 'errors.unknown'.tr(), true);
       return null;
     }
@@ -70,8 +71,8 @@ Future<IndustryResponse> getIndustries(BuildContext context) async {
         showFloatingFlushbar(context, 'errors.industries'.tr(), true);
         return null;
       }
-    } catch (e) {
-      print(e);
+    } catch (e, stackTrace) {
+      Utilities.reportError(e, stackTrace);
       showFloatingFlushbar(context, 'errors.unknown'.tr(), true);
       return null;
     }
@@ -102,8 +103,8 @@ Future<bool> logout(BuildContext context) async {
         showFloatingFlushbar(context, 'errors.industries'.tr(), true);
         return false;
       }
-    } catch (e) {
-      print(e);
+    } catch (e, stackTrace) {
+      Utilities.reportError(e, stackTrace);
       showFloatingFlushbar(context, 'errors.unknown'.tr(), true);
       return false;
     }
