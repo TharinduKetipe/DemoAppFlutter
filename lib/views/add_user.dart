@@ -4,6 +4,10 @@ import 'package:demo/widgets/appbar.dart';
 import 'package:demo/widgets/drawer.dart';
 import 'package:demo/widgets/form_items.dart';
 import 'package:demo/mixins/validation_mixin.dart';
+import 'package:demo/models/user_model.dart';
+import 'package:demo/commons/utilities.dart';
+import 'package:demo/commons/db_herlper.dart';
+import 'package:demo/widgets/flushbar.dart';
 
 class AddUserPage extends StatefulWidget {
   @override
@@ -15,6 +19,8 @@ class _AddUserPageState extends State<AddUserPage> with ValidationMixin {
   String email = "";
   String name = "";
   bool isInvalid = false;
+
+  final dbHelper = DbHelper.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +70,9 @@ class _AddUserPageState extends State<AddUserPage> with ValidationMixin {
                           padding: EdgeInsets.only(top: 50),
                           child: submitButton('buttonTitles.add'.tr(), () {
                             formKey.currentState.save();
-                            if (formKey.currentState.validate()) {}
+                            if (formKey.currentState.validate()) {
+                              addUser();
+                            }
                           }, width - 70, height / 20, context),
                         ),
                       ])),
@@ -73,5 +81,17 @@ class _AddUserPageState extends State<AddUserPage> with ValidationMixin {
         ),
       ]),
     );
+  }
+
+  void addUser() async {
+    var user =
+        User(id: Utilities.generateRandomNumber(), name: name, email: email);
+    var status = await dbHelper.insert(user.toMap());
+    print(status);
+    if (status > 0) {
+      showFloatingFlushbar(context, 'flushbar.user_success'.tr(), false);
+    } else {
+      showFloatingFlushbar(context, 'flushbar.user_fail'.tr(), false);
+    }
   }
 }
