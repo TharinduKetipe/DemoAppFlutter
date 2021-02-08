@@ -1,6 +1,6 @@
-# demo
+# db_demo
 
-Flutter model app
+A new Flutter project.
 
 ## Getting Started
 
