@@ -52,7 +52,6 @@ class _UsersPageState extends State<UsersPage> {
         body: users != null
             ? ListView.separated(
                 itemBuilder: (BuildContext context, index) {
-                  // print(stories[index]);
                   return userItem(context, users[index], deleteCallback);
                 },
                 separatorBuilder: (BuildContext context, index) {

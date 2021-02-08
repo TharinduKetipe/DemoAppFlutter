@@ -40,6 +40,7 @@ dev_dependencies:
   shared_preferences: ^0.5.7+3
   sqflite:
   path_provider: ^1.6.27
+  sentry_flutter: ^4.0.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
