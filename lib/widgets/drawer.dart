@@ -44,6 +44,10 @@ Widget navDrawer(BuildContext context) {
           title: menuTile(context, menus[1]),
           onTap: () {
             Navigator.pushReplacementNamed(context, '/industries');
+            // Navigator.pushNamedAndRemoveUntil(context, '/home', (route) => false);
+            // Navigator.push(context, route)
+            // Navigator.pushReplacement(context, newRoute);
+            // Navigator.pushAndRemoveUntil(context, newRoute, (route) => false);
           },
         ),
         separator(context),
