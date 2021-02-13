@@ -26,8 +26,10 @@ class _MyHomePageState extends State<MyHomePage> {
     // await queryAll();
     //await querySpecific();
     //await rawQuery();
+    // await genericQuery();
     // await delete();
     //await update();
+    await deleteAll();
   }
 
 //save new record in DB
@@ -62,6 +64,16 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+//pass sql query and get it executed
+  void genericQuery() async {
+    //get all dogs where age < 6
+    var query = 'SELECT * FROM dog WHERE age <= 6';
+    var dogs = await dbHelper.genericQuery(query);
+    dogs.forEach((dog) {
+      print(dog);
+    });
+  }
+
 //delete record by id
   void delete() async {
     var row = await dbHelper.deleteData(2752);
@@ -81,6 +93,20 @@ class _MyHomePageState extends State<MyHomePage> {
     if (newdata != null) {
       print(newdata[0]);
     }
+  }
+
+//delete whole table once
+  void deleteAll() async {
+    var dogsBefore = await dbHelper.queryAllRows();
+    dogsBefore.forEach((dog) {
+      print(dog);
+    });
+    print("******** deleting . . . ************");
+    var status = await dbHelper.deleteAll();
+    var dogs = await dbHelper.queryAllRows();
+    dogs.forEach((dog) {
+      print(dog);
+    });
   }
 
   int generateRandomNumber() {

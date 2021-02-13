@@ -74,10 +74,22 @@ class DbHelper {
     return await db.rawQuery('SELECT * FROM $_table WHERE age >= ?', [age]);
   }
 
+  //Generic function to pass SQL query as a parameter and filter any kind of data
+  Future<List<Map<String, dynamic>>> genericQuery(String query) async {
+    Database db = await instance.database;
+    return await db.rawQuery(query);
+  }
+
   //filter records according to specific criteria
   Future<List<Map<String, dynamic>>> getaDatabyId(int id) async {
     Database db = await instance.database;
     return await db.query(_table, where: "id == ?", whereArgs: [id]);
+  }
+
+  //delete all records of table record by id
+  Future<int> deleteAll() async {
+    Database db = await instance.database;
+    return await db.delete(_table);
   }
 
   //delete record by id
