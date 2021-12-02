@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       //Instead of route map we have set generate route function using onGenerateRoute
       onGenerateRoute: RouteGenerator.generateRoute,
-      home: HomePage(title: 'Flutter Routing Example'),
+      home: HomePage(title: 'Container Margin Example'),
     );
   }
 }
