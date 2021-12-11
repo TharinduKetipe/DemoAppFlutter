@@ -1,15 +1,15 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/extensions/color.dart';
 
 //Color theme generate https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=03A9F4
 // https://maketintsandshades.com/#03a9f4
+
 ThemeData primaryTheme = ThemeData(
   brightness: Brightness.light,
   visualDensity: VisualDensity(vertical: 0.5, horizontal: 0.5),
   primarySwatch: MaterialColor(
     //https://api.flutter.dev/flutter/material/Colors-class.html
-    240116,
+    240116, //primary color in integer format #03a9f4
     <int, Color>{
       50: HexColor.fromHex("#b3e5fc"),
       100: HexColor.fromHex("#9addfb"),
