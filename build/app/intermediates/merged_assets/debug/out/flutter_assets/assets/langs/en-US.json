@@ -1,0 +1,16 @@
+{
+    "titles": {
+        "home" : "Home",
+        "login" : "Login",
+        "first" : "First Screen"
+    },
+    "buttonTitles": {
+        "login" : "Login"
+        
+    },
+    "labels": {
+        "email" : "Email",
+        "password" : "Password"
+        
+    }
+}
