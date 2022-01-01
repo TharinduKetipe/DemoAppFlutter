@@ -1,12 +1,12 @@
 import 'package:ServiceDemo/models/post.dart';
 
 class PostsResponse {
-  List<Post> posts;
+  late List<Post> posts;
 
-  PostsResponse({this.posts});
+  PostsResponse({required this.posts});
 
   PostsResponse.fromJson(List<dynamic> json) {
-    posts = new List<Post>();
+    posts = new List<Post>.empty();
     for (final post in json) {
       posts.add(new Post.fromJson(post));
     }

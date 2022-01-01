@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ServiceDemo/network/webservice.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
@@ -55,13 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'Web service sample',
             ),
-            FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.blue)),
-              color: Colors.white,
-              textColor: Colors.blue,
-              padding: EdgeInsets.all(8.0),
+            ElevatedButton(
               onPressed: () {
                 this.fetchData();
               },

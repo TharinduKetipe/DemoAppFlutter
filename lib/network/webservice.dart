@@ -13,20 +13,21 @@ Future<Post> createPost(BuildContext context, body, title, userId) async {
       (connectivityResult == ConnectivityResult.wifi)) {
     try {
       var params = {"title": title, "body": body, "userId": userId};
-      final http.Response response = await http.post(global.POSTS,
+      var url = Uri.parse(global.POSTS);
+      final http.Response response = await http.post(url,
           headers: {"Content-Type": "application/json"},
           body: jsonEncode(params));
       var responseBody = json.decode(response.body);
       if (response.statusCode == 201) {
         return Post.fromJson(responseBody);
       } else {
-        return null;
+        return Post(title: "title", body: "body", userId: 0, id: 0);
       }
     } catch (e) {
-      return null;
+      return Post(title: "title", body: "body", userId: 0, id: 0);
     }
   } else {
-    return null;
+    return Post(title: "title", body: "body", userId: 0, id: 0);
   }
 }
 
@@ -37,20 +38,21 @@ Future<Post> updatePost(BuildContext context, body, title, userId, id) async {
       (connectivityResult == ConnectivityResult.wifi)) {
     try {
       var params = {"title": title, "body": body, "userId": userId};
-      final http.Response response = await http.put(global.POSTS + "/$id",
+      var url = Uri.parse(global.POSTS + "/$id");
+      final http.Response response = await http.put(url,
           headers: {"Content-Type": "application/json"},
           body: jsonEncode(params));
       var responseBody = json.decode(response.body);
       if (response.statusCode == 200) {
         return Post.fromJson(responseBody);
       } else {
-        return null;
+        return Post(title: "title", body: "body", userId: 0, id: 0);
       }
     } catch (e) {
-      return null;
+      return Post(title: "title", body: "body", userId: 0, id: 0);
     }
   } else {
-    return null;
+    return Post(title: "title", body: "body", userId: 0, id: 0);
   }
 }
 
@@ -61,20 +63,21 @@ Future<Post> updatePostContent(BuildContext context, body, id) async {
       (connectivityResult == ConnectivityResult.wifi)) {
     try {
       var params = {"body": body};
-      final http.Response response = await http.patch(global.POSTS + "/$id",
+      var url = Uri.parse(global.POSTS + "/$id");
+      final http.Response response = await http.patch(url,
           headers: {"Content-Type": "application/json"},
           body: jsonEncode(params));
       var responseBody = json.decode(response.body);
       if (response.statusCode == 200) {
         return Post.fromJson(responseBody);
       } else {
-        return null;
+        return Post(title: "title", body: "body", userId: 0, id: 0);
       }
     } catch (e) {
-      return null;
+      return Post(title: "title", body: "body", userId: 0, id: 0);
     }
   } else {
-    return null;
+    return Post(title: "title", body: "body", userId: 0, id: 0);
   }
 }
 
@@ -84,24 +87,25 @@ Future<Post> getPost(BuildContext context, String id) async {
   if ((connectivityResult == ConnectivityResult.mobile) ||
       (connectivityResult == ConnectivityResult.wifi)) {
     try {
-      final http.Response response = await http.get(global.POSTS + "/$id",
-          headers: {"Content-Type": "application/json"});
+      var url = Uri.parse(global.POSTS + "/$id");
+      final http.Response response =
+          await http.get(url, headers: {"Content-Type": "application/json"});
       var responseBody = json.decode(response.body);
       if (response.statusCode == 200) {
         return Post.fromJson(responseBody);
       } else if (response.statusCode == 403) {
         print("Unauthorized");
-        return null;
+        return Post(title: "title", body: "body", userId: 0, id: 0);
       } else {
         print("Error");
-        return null;
+        return Post(title: "title", body: "body", userId: 0, id: 0);
       }
     } catch (e) {
       print(e);
-      return null;
+      return Post(title: "title", body: "body", userId: 0, id: 0);
     }
   } else {
-    return null;
+    return Post(title: "title", body: "body", userId: 0, id: 0);
   }
 }
 
@@ -111,23 +115,24 @@ Future<PostsResponse> getPosts(BuildContext context) async {
   if ((connectivityResult == ConnectivityResult.mobile) ||
       (connectivityResult == ConnectivityResult.wifi)) {
     try {
-      final http.Response response = await http
-          .get(global.POSTS, headers: {"Content-Type": "application/json"});
+      var url = Uri.parse(global.POSTS);
+      final http.Response response =
+          await http.get(url, headers: {"Content-Type": "application/json"});
       var responseBody = json.decode(response.body);
       if (response.statusCode == 200) {
         return PostsResponse.fromJson(responseBody);
       } else if (response.statusCode == 403) {
         print("Unauthorized");
-        return null;
+        return PostsResponse(posts: new List<Post>.empty());
       } else {
         print("Error");
-        return null;
+        return PostsResponse(posts: new List<Post>.empty());
       }
     } catch (e) {
       print(e);
-      return null;
+      return PostsResponse(posts: new List<Post>.empty());
     }
   } else {
-    return null;
+    return PostsResponse(posts: new List<Post>.empty());
   }
 }
