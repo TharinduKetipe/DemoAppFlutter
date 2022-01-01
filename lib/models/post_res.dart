@@ -6,7 +6,7 @@ class PostsResponse {
   PostsResponse({required this.posts});
 
   PostsResponse.fromJson(List<dynamic> json) {
-    posts = new List<Post>.empty();
+    posts = <Post>[];
     for (final post in json) {
       posts.add(new Post.fromJson(post));
     }
