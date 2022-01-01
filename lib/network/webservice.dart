@@ -136,3 +136,33 @@ Future<PostsResponse> getPosts(BuildContext context) async {
     return PostsResponse(posts: new List<Post>.empty());
   }
 }
+
+Future<bool?> deletePost(BuildContext context, int id) async {
+  var connectivityResult = await Connectivity().checkConnectivity();
+
+  if (connectivityResult == ConnectivityResult.mobile ||
+      connectivityResult == ConnectivityResult.wifi) {
+    //we have the connection
+    try {
+      var url = Uri.parse(global.POSTS + "/$id");
+
+      final http.Response response = await http.delete(
+        url, //url
+        headers: {'Content-Type': 'application/json'},
+      );
+
+      var responseBody = json.decode(response.body);
+
+      if (response.statusCode == 200) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
+      return false;
+    }
+  } else {
+    //we don't have connection, we can give error alert as No network
+    return false;
+  }
+}

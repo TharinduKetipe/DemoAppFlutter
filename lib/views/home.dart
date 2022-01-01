@@ -40,6 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
     //PATCH
     var patch = await updatePostContent(context, "Patch updated body", 3);
     print(patch);
+
+    //DELETE
+    var del = await deletePost(context, 18);
+    print(del);
   }
 
   @override
