@@ -26,20 +26,15 @@ ThemeData primaryTheme = ThemeData(
   primaryColor: HexColor.fromHex("#03a9f4"),
   fontFamily: 'Lato',
   appBarTheme: AppBarTheme(
+      backgroundColor: HexColor.fromHex("#03a9f4"),
       textTheme: TextTheme(
-    headline4: TextStyle(
-      fontFamily: 'Lato',
-      fontSize: 20,
-      fontWeight: FontWeight.bold,
-      color: Colors.white,
-    ),
-    headline5: TextStyle(
-      fontFamily: 'Lato',
-      fontSize: 20,
-      fontWeight: FontWeight.w200,
-      color: HexColor.fromHex("#03a9f4"),
-    ),
-  )),
+        headline4: TextStyle(
+          fontFamily: 'Lato',
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        ),
+      )),
   buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
   toggleButtonsTheme: ToggleButtonsThemeData(
       //toggle button theme
