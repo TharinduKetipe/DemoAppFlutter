@@ -1,0 +1,34 @@
+{
+    "titles": {
+        "home" : "Home",
+        "login" : "Login",
+        "first" : "First Screen",
+        "users" : "Users",
+        "industries" : "Industries"
+    },
+    "buttonTitles": {
+        "login" : "Login"
+        
+    },
+    "labels": {
+        "email" : "Email",
+        "password" : "Password",
+        "industry_id" : "Industry Id : "
+    },
+    "errors": {
+        "network" : "No network, Please connect to the internet.",
+        "login" : "Login failed, Please try again",
+        "industries" : "Industry fetching failed, Please try again",
+        "unknown" : "Something went wrong, Please try again"
+        
+    },
+    "drawer": {
+        "title" : "Demo App",
+        "home" : "Home",
+        "industries" : "Industries",
+        "users" : "Users",
+        "add_user" : "Add User",
+        "logout" : "Logout"
+        
+    }
+}
