@@ -35,7 +35,7 @@ dev_dependencies:
   easy_localization: ^2.3.3
   http: ^0.12.1
   connectivity: ^0.4.8+6
-  intl: 0.17.0
+  intl: ^0.17.0
   flushbar: ^1.10.4
   shared_preferences: ^0.5.7+3
   sqflite:
