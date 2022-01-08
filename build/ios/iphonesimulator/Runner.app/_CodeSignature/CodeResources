@@ -190,7 +190,7 @@
 		</data>
 		<key>Frameworks/FMDB.framework/FMDB</key>
 		<data>
-		H5WuvKSssV+hJfcLjKZxOG/OEhc=
+		F5cQjnTP5JlnVhcaV1farU2nqws=
 		</data>
 		<key>Frameworks/FMDB.framework/Info.plist</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		hDeYAvBgjZHM0l5qnOL8uKMVWWw=
+		Wvq6oNJkZpS0K8ZVKNHaRX6GoA8=
 		</data>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>Frameworks/Reachability.framework/Reachability</key>
 		<data>
-		7GmUtpLeIx8cF7PiDLHaokfOBXw=
+		A3gDS70SG6O+9ILG6bf6PpdIWAc=
 		</data>
 		<key>Frameworks/Reachability.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -302,7 +302,7 @@
 		</data>
 		<key>Frameworks/Sentry.framework/Sentry</key>
 		<data>
-		gXRHyw2iBZ7BTodVv3xI43c/UHk=
+		XkLxS60XovfAiu8lIgV+tWAIW3Y=
 		</data>
 		<key>Frameworks/Sentry.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -318,7 +318,7 @@
 		</data>
 		<key>Frameworks/connectivity.framework/connectivity</key>
 		<data>
-		zBI9A3ecZ3xEZKsFk6O08J1E37s=
+		CaQzNLELh1ZJqmDikG8u5+0I90M=
 		</data>
 		<key>Frameworks/package_info.framework/Info.plist</key>
 		<data>
@@ -330,7 +330,7 @@
 		</data>
 		<key>Frameworks/package_info.framework/package_info</key>
 		<data>
-		HB8snG22iWIt6c4rh/rCSf9DxFI=
+		L/0gyqlaLELG9L+a5+R8uVY9pnQ=
 		</data>
 		<key>Frameworks/path_provider.framework/Info.plist</key>
 		<data>
@@ -342,7 +342,7 @@
 		</data>
 		<key>Frameworks/path_provider.framework/path_provider</key>
 		<data>
-		JfrP3AOuq7YP69Y1C0SszWkvw0o=
+		3kSkk8L4LHDJzPAeRsKvIKwBCe0=
 		</data>
 		<key>Frameworks/sentry_flutter.framework/Info.plist</key>
 		<data>
@@ -354,7 +354,7 @@
 		</data>
 		<key>Frameworks/sentry_flutter.framework/sentry_flutter</key>
 		<data>
-		8sPugHXfX7zPodLNotf9Gi8iLFw=
+		TVgGl3qTYYGzuxt7twogTRyS1s8=
 		</data>
 		<key>Frameworks/shared_preferences.framework/Info.plist</key>
 		<data>
@@ -366,7 +366,7 @@
 		</data>
 		<key>Frameworks/shared_preferences.framework/shared_preferences</key>
 		<data>
-		3dIeIP9rJ9htiVDQlGqb8pawrcI=
+		SpBNC/K+NFo0tBJUcPdbbjbOeXY=
 		</data>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
 		<data>
@@ -378,11 +378,11 @@
 		</data>
 		<key>Frameworks/sqflite.framework/sqflite</key>
 		<data>
-		r/o78nWaSkDmkz9uZmF6qrJPtUc=
+		BKUu9ujMt4cqNVF9QCvY5MsxLHY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6kAquzmYGi0RLQesckJhz6tFT38=
+		gqBDGnE8ll4XZ5ecxh4v2Do+U+I=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -717,7 +717,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WfBwchmL3aTfMzzsRplkukt4oCzzjCsuiQxK84C4wqs=
+			yW3LhtB1OoeVbmsJvIdAmYrR7E5l9q24bFqh1h1CDOg=
 			</data>
 		</dict>
 		<key>Frameworks/FMDB.framework/Info.plist</key>
@@ -738,7 +738,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXxuHHzuD9HqvOeyj2kiLCMa9l9ybb7gd6Jbe7NruZE=
+			4NWbfRhXJfAAj9fgarXhcrZB+c7AW8rxDvr77q5tLZQ=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
@@ -892,7 +892,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BUPOeTGwYjK2HIzhA1xcA1IARHPHV8ea7jjdLekR7f8=
+			Ne62VQ9FeuYd+x8/yjsGnFrrLg62cfsCagCNElhl2Ho=
 			</data>
 		</dict>
 		<key>Frameworks/Reachability.framework/_CodeSignature/CodeResources</key>
@@ -913,7 +913,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a9472pKgOuk+LZse/FNGefb/uCRuYEAPoaEDDPXE9uo=
+			2ZDpG7quBX5RFdk9/weP6YvCQBKXLe+sOiNnA6THpP8=
 			</data>
 		</dict>
 		<key>Frameworks/Sentry.framework/_CodeSignature/CodeResources</key>
@@ -941,7 +941,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E9+t4Hp3teLK/ZAJXhXjggDrBRYw/kN/dqR+lB7JiLU=
+			ARppWeRoXKsc827nzlI3jVmJR8cXT/bWo05/tWMGrSQ=
 			</data>
 		</dict>
 		<key>Frameworks/package_info.framework/Info.plist</key>
@@ -962,7 +962,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Snm+CsAUvGl1dlpXEVq+6A10b6SrNKbzg/NL+FfFdoQ=
+			NKT6/GN7zBrvGdijNzJW6Zj+5ZN33c6SuPBaP+afGzQ=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider.framework/Info.plist</key>
@@ -983,7 +983,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VDbQAf4OIiAqhlDqqBQhut/Zb4IkCQ3jYN5jg80erWE=
+			tuhOkhBljnC3EfMlDexuekKvg2rC0aFR/C+QKsXLdCI=
 			</data>
 		</dict>
 		<key>Frameworks/sentry_flutter.framework/Info.plist</key>
@@ -1004,7 +1004,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qDca/A1FyagC+t1OM5NDyup8udwchCIn+I4CDCaOU0A=
+			ukMBmRr0O9C7PXjm/v2qzbIvicM+fLlaPkCq7d0uJIs=
 			</data>
 		</dict>
 		<key>Frameworks/shared_preferences.framework/Info.plist</key>
@@ -1025,7 +1025,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXEA1vXgerbYiVtTRVwYUlRn/foPUyXRJEavAiAzT6o=
+			bSiT39shwYRFWVwcdQmG86Ye6w3XF+iBC5/dpD9FObw=
 			</data>
 		</dict>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
@@ -1046,7 +1046,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uUjVM2gydsM3e7i18tejLaVP2l4wBmXOHH5dyTBbznk=
+			O/DQkojiHaXVKUFJXmFr77IxyxM4Ji1uNR4OvUqFN4s=
 			</data>
 		</dict>
 	</dict>

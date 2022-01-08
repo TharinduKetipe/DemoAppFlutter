@@ -1,0 +1,8 @@
+# Referenced at /Users/tharindu/other/FlutterCourse/DemoApp/DemoAppFlutter/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:21
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /Users/tharindu/other/FlutterCourse/DemoApp/DemoAppFlutter/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:68
+-keep class androidx.lifecycle.ProcessLifecycleOwnerInitializer { <init>(); }
+# Referenced at /Users/tharindu/other/FlutterCourse/DemoApp/DemoAppFlutter/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:26
+-keep class com.ucsc.demo.MainActivity { <init>(); }
+# Referenced at /Users/tharindu/other/FlutterCourse/DemoApp/DemoAppFlutter/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:21
+-keep class io.flutter.app.FlutterApplication { <init>(); }
